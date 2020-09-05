@@ -7,14 +7,14 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
+@Table(name = "ROLE")
 @Data
-@Table(name = "USER")
-public class UserDO {
+public class RoleDO {
 
     @Id
     private String id;
 
-    private String username;
+    private String name;
 
-    private String password;
+    private String code;
 }
